@@ -419,9 +419,15 @@ body {
     overflow: hidden;}
 
 .features-item-container{
-    display: inline-block;
+    display: block;
+    
 
 }
+.features-item-img-overlay{
+position: relative;
+overflow: hidden;
+}
+
 .feature:hover ,
 .feature:focus{
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -548,3 +554,29 @@ margin-bottom: 72px;
     display: flex;
     gap: 16px;
 }
+
+/*===========OverLay==========*/
+.overlay{
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F4F4FD;
+    width: 100%;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 500ms linear;
+}
+
+.feature:hover .overlay, 
+.feature:focus .overlay{
+    transform: translate(0, 0);
+}
+/*===========/OverLay==========*/
