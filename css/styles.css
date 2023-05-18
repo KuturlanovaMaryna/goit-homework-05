@@ -499,7 +499,7 @@ margin-bottom: 72px;
     fill: currentColor;
 }
 
-/*Footer*/
+/*===========Footer==========*/
 .basement-logo{
     color: var(--accent-color);
     
@@ -555,6 +555,8 @@ margin-bottom: 72px;
     gap: 16px;
 }
 
+/*===========/Footer==========*/
+
 /*===========OverLay==========*/
 .overlay{
     height: 100%;
@@ -580,3 +582,43 @@ margin-bottom: 72px;
     transform: translate(0, 0);
 }
 /*===========/OverLay==========*/
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(46, 47, 66, 0.4);
+;
+}
+
+.modal-window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 576px;
+    background-color: rgba(252, 252, 252, 1);
+
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 233, 252, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%;
+}
+.is-hidden{
+    
+}
