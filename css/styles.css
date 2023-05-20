@@ -87,17 +87,15 @@ body {
     display: flex;
 
 }
+
+
+
 .site-nav-link{
     color: #2e2f42;
     font-weight: 500;
-     font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-
-
-.site-nav-link{
     display: block;
     padding: 24px 0;
     position: relative;
